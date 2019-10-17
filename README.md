@@ -4,12 +4,12 @@
 
 ## The problem
 
-As well all know by now, Jupyter notebook `*.ipynb` files are awesome because they combine formatted text, source code and rich graphical output. However they don't play well with traditional text-based version control because a `diff` of two notebook versions is kind of a mess.
+As we all know by now, Jupyter notebook `*.ipynb` files are awesome because they combine formatted text, source code and rich graphical output. However they don't play well with traditional text-based version control because a `diff` of two notebook versions is kind of a mess.
 
 ## The goal
 
 We would like to do the following:
-- save a `*ipynb` in version control (git)
+- save a notebook file (`*.ipynb`) in version control (git)
 - make some changes to it
 - See a rich visual comparison of the two versions, highlighting changes to all three elements of the notebook (text, code, graphics)
 
@@ -30,7 +30,7 @@ Furthermore, we would like to be able to do this comparison at *two different po
 - Enjoy this rich visual comparison, decide if you're happy with the changes.
 - Commit your changes.
 
-Check this out yourself in [binder](https://mybinder.org/v2/gh/brian-rose/notebook_diff_tutorial/master)
+Check this out yourself in [binder](https://mybinder.org/v2/gh/brian-rose/notebook_diff_tutorial/master).
 
 ### Pros and cons
 
@@ -62,9 +62,7 @@ Check this out yourself in [binder](https://mybinder.org/v2/gh/brian-rose/notebo
 
 ## An alternative approach: `Jupytext`
 
-[Jupytext](https://jupytext.readthedocs.io/en/latest/?badge=latest)
-
-This is a different kind of solution. It’s a tool for saving notebooks in plain text formats that are more amenable to version control and standard diff tools.
+[Jupytext](https://jupytext.readthedocs.io/en/latest/?badge=latest) is a different kind of solution. It’s a tool for saving notebooks in plain text formats that are more amenable to version control and standard diff tools.
 
 Basically when we save a `*.ipynb` file we also save companion files in text formats like `*.md` and `*.py`. The strategy then is for collaborators to only put the text files under version control and not actually share the `*.ipynb` files at all. Each user regenerates the notebook from source.
 
