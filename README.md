@@ -1,4 +1,4 @@
-# Dealing with different versions of Jupyter notebooks: a brief tutorial
+# Version control with Jupyter notebooks: a brief tutorial
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brian-rose/notebook_diff_tutorial/master)
 
@@ -67,3 +67,7 @@ Check this out yourself in [binder](https://mybinder.org/v2/gh/brian-rose/notebo
 Basically when we save a `*.ipynb` file we also save companion files in text formats like `*.md` and `*.py`. The strategy then is for collaborators to only put the text files under version control and not actually share the `*.ipynb` files at all. Each user regenerates the notebook from source.
 
 This is somewhat like stripping the notebook of all output before putting in version control, but easier. This doesn't give the rich visual difference in the *output* that we get with `nbdime`, but may be a good solution if you don't think the output (i.e. the graphics) should be in version control in the first place.
+
+----------------------------------------------
+
+This tutorial was originally prepared by Brian Rose for the CMIP6 Hackathon, October 2019.
